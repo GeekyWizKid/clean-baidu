@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "百度搜索净化器",
+  "version": "1.0",
+  "description": "优化百度搜索结果，过滤无关内容",
+  "permissions": ["activeTab"],
+  "host_permissions": ["*://*.baidu.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.baidu.com/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 
